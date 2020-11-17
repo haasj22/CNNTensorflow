@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/10B9K63je0qVVYPlitKOD3_K_dZ_ZT7GD
 """
 
-!pip install tensorflow==1.15.0
 
 import keras
 from keras.models import Sequential,Input,Model
@@ -18,6 +17,7 @@ from keras.layers.advanced_activations import LeakyReLU
 import numpy as np
 import tensorflow as tf
 
+big_list = [] 
 #read data from file
 f = open('histograms3.txt')
 for line in f:
@@ -42,8 +42,9 @@ np.random.shuffle(test_data)
 
 
 #separating values into x and y values
-train_X=train_data[1:769]
-train_Y=train_data[0]
+train_X=train_data[:,1:769]
+train_Y=train_data[:,0]
+train_Y=[[x] for x in train_Y]
 print("Training data")
 print(train_X[0:5])
 print(train_Y[0:5])
