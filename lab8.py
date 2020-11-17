@@ -48,9 +48,30 @@ train_Y=[[x] for x in train_Y]
 print("Training data")
 print(train_X[0:5])
 print(train_Y[0:5])
-test_X=test_data[1:769]
-test_Y=test_data[0]
+test_X=test_data[:,1:769]
+test_Y=test_data[:,0]
+test_Y=[[x] for x in test_Y]
 
 num_classes=1
 epochs=20
 batch_size=100
+
+#from tutorial
+fashion_model = Sequential()
+fashion_model.add(Conv2D(32, kernel_size=(3, 3),activation='linear',input_shape=(768),padding='same'))
+fashion_model.add(LeakyReLU(alpha=0.1))
+fashion_model.add(MaxPooling2D((2, 2),padding='same'))
+fashion_model.add(Conv2D(64, (3, 3), activation='linear',padding='same'))
+fashion_model.add(LeakyReLU(alpha=0.1))
+fashion_model.add(MaxPooling2D(pool_size=(2, 2),padding='same'))
+fashion_model.add(Conv2D(128, (3, 3), activation='linear',padding='same'))
+fashion_model.add(LeakyReLU(alpha=0.1))                  
+fashion_model.add(MaxPooling2D(pool_size=(2, 2),padding='same'))
+fashion_model.add(Flatten())
+fashion_model.add(Dense(128, activation='linear'))
+fashion_model.add(LeakyReLU(alpha=0.1))                  
+fashion_model.add(Dense(num_classes, activation='softmax'))
+
+#also from tutorial]
+fashion_model.compile(loss=keras.losses.categorical_crossentropy, optimizer=keras.optimizers.Adam(),metrics=['accuracy'])
+fashion_model.summary()
