@@ -26,19 +26,27 @@
               "angle": 0,
               "id": "8cd9210c-cbc3-45ac-a182-819f6f3b6755",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "storesCredentials": true,
               "isEncrypted": true,
               "isALog": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "title": "hacking"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -83,18 +91,25 @@
               "angle": 0,
               "id": "e5aecae5-1ca5-4eeb-8c1d-a5f1b2a6eb4c",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "storesCredentials": false,
-              "threats": [],
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "title": "tampering"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Storage System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -112,6 +127,14 @@
               "id": "8cdda4b8-a576-4677-87d7-cdb511fdfadf",
               "z": 4,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "title": "weather"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -446,27 +469,6 @@
               ],
               "id": "ffa5368a-4fcc-45c2-9a09-1c21ec10dc36",
               "z": 13,
-              "attrs": {}
-            },
-            {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
-                "x": 260,
-                "y": 150
-              },
-              "target": {
-                "x": 570,
-                "y": 160
-              },
-              "vertices": [
-                {
-                  "x": 400,
-                  "y": 210
-                }
-              ],
-              "id": "2b7e724f-1903-4e75-9441-c671b15b7a13",
-              "z": 14,
               "attrs": {}
             }
           ]
