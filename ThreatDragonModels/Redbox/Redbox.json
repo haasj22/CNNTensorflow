@@ -85,6 +85,7 @@
               "z": 3,
               "hasOpenThreats": false,
               "storesCredentials": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -344,7 +345,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "inventory info",
+                      "text": "inventory/payment\ninfo",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -404,6 +405,69 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 580,
+                "y": 480
+              },
+              "target": {
+                "x": 240,
+                "y": 490
+              },
+              "vertices": [
+                {
+                  "x": 410,
+                  "y": 320
+                }
+              ],
+              "id": "8b3883a4-6df4-482d-87d4-d6da7da13173",
+              "z": 12,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 730,
+                "y": 190
+              },
+              "target": {
+                "x": 720,
+                "y": 340
+              },
+              "vertices": [
+                {
+                  "x": 570,
+                  "y": 250
+                }
+              ],
+              "id": "ffa5368a-4fcc-45c2-9a09-1c21ec10dc36",
+              "z": 13,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 260,
+                "y": 150
+              },
+              "target": {
+                "x": 570,
+                "y": 160
+              },
+              "vertices": [
+                {
+                  "x": 400,
+                  "y": 210
+                }
+              ],
+              "id": "2b7e724f-1903-4e75-9441-c671b15b7a13",
+              "z": 14,
+              "attrs": {}
             }
           ]
         },
