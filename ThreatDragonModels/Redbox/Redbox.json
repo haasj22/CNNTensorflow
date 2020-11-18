@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "Redbox",
+    "owner": "Polina Gannotskaya",
+    "description": "Redbox system: database with info on credit cards and inventory of DVD's, user interface, web UI, storage system (contains DVD's)"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "report",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
